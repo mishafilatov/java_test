@@ -4,8 +4,9 @@ public class MyFirstProgram {
     hello("world");
     hello("Misha");
 
-    double len = 5;
-    System.out.println("Площадь квадрата со стороной " + len + " = " + area(len));
+    Square s = new Square();
+    s.l = 5;
+    System.out.println("Площадь квадрата со стороной " + s.l + " = " + area(s));
 
     double a = 4;
     double b = 6;
@@ -16,8 +17,8 @@ public class MyFirstProgram {
     System.out.println("Hello, " + somebody + "!");
   }
 
-  public static double area (double l) {
-    return l * l;
+  public static double area (Square s) {
+    return s.l * s.l;
   }
 
   public static double area (double a, double b) {
